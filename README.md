@@ -1,43 +1,34 @@
-1. Parent and Child Process Messages
+# 🐚 Basic Shell Script Programs
 
-    Creates a child process using fork().
+This repository contains simple and beginner-friendly shell script programs for practice and learning.
 
-    Both parent and child print their own messages.
+---
 
-    Demonstrates how processes run independently after fork().
+## 📂 Included Scripts
 
-2. Parent Waits for Child
+- `factorial.sh` – Calculates the factorial of a number  
+- `circle.sh` – Finds area and circumference of a circle  
+- `arithmetic.sh` – Performs basic arithmetic operations (+, -, ×, ÷)  
+- `max_min_temperature.sh` – Finds maximum and minimum temperature from input  
+- `even_odd.sh` – Checks if a number is even or odd  
+- `simple_loop.sh` – Demonstrates basic `for` or `while` loops  
 
-    Parent creates a child process.
+---
 
-    Parent waits for the child to complete using wait().
+## 📘 About
 
-    Ensures child finishes before parent continues.
+These scripts are:
 
-3. Alternate Number Printing with Pipes
+- Written in **bash**
+- Good for understanding basic Linux shell scripting
+- Useful for students and beginners in shell programming
 
-    Uses two processes connected by a pipe.
+---
 
-    Parent and child print numbers alternately (e.g., parent prints even, child prints odd).
+## ▶️ How to Run
 
-    Demonstrates inter-process communication with pipes.
+Make the script executable and run:
 
-4. Producer-Consumer Problem
-
-    One process produces data, another consumes it.
-
-    Uses pipes or shared memory for communication.
-
-    Illustrates synchronization between processes.
-
-5. CPU Scheduling Algorithms
-
-    Simulates common CPU scheduling algorithms:
-
-       -FCFS (First Come First Serve): Jobs are executed in order of arrival.
-  
-        -SJF (Shortest Job First): Jobs with shortest execution time run first.
-
-        -Round Robin: Each job gets a fixed time slice in rotation.
-
-    Helps understand how CPU manages multiple processes.
+```bash
+chmod +x script_name.sh
+./script_name.sh
